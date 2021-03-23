@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>shinbian11의 Web Toy project</title>
+    <meta charset = "utf-8">
+    <style>
+      body{
+        margin: 10px ;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 30px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0px;
+        padding: 20px;
+      }
+      #grid ol{
+        border-right: 1px solid gray;
+        width : 200px;
+        margin: 0px;
+        padding: 20px;
+      }
+      #grid{
+        display:grid;
+        grid-template-columns: 250px 1fr;
+      }
+      #article{
+        padding-left: 25px;
+      }
+      @media(max-width:600px)
+      {
+        #grid{
+          display:block;
+        }
+        #grid ol{
+          border-right: none;
+        }
+        h1{
+          border-bottom: none;
+        }
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1>나의 Web Page</h1>
+
+  <div id = "grid">
+      <ol>
+        <li><a href = "information.html" class="saw">자기소개</a></li>
+        <li><a href = "study.html" class="saw">공부하고 있는 분야들</a></li>
+        <li><a href = "css.html" class="saw">css</a></li>
+        <li><a href = "university.jpg" target="_blank">대학교 대강당 사진</a></li>
+      </ol>
+      <div>
+        <h2>CSS</h2>
+        <div  id ="article">information</a>
+          shinbian11의 자기소개와 공부 하고 있는 분야에 대해 소개하는 웹 사이트입니다.
+        </div>
+      </div>
+  </div>
+
+
+  <br><br>
+    태그 선택자 보다 class 선택자, class 선택자보다 id선택자가 더 강하다
+  </body>
+</html>
